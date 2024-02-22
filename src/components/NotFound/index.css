@@ -1,1 +1,6 @@
-/* Write your CSS here */
+.not-found {
+  font-weight: 600;
+  font-size: 24px;
+  color: #ffffff;
+  font-family: 'Bree Serif';
+}
