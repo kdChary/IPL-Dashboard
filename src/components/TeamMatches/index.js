@@ -76,17 +76,17 @@ class TeamMatches extends Component {
   )
 
   renderMatchCard = () => {
-    const {matchDetails} = this.state
-    const {recentMatches} = matchDetails
+    const {teamMatchDetails} = this.state
+    const {recentMatches} = teamMatchDetails
 
-    const {match} = this.props
-    const {params} = match
-    const {id} = params
+    // const {match} = this.props
+    // const {params} = match
+    // const {id} = params
 
     return (
       <ul className="team-recent-matches-list">
         {recentMatches.map(eachMatch => (
-          <MatchCard key={`${id}`} recentMatchDetails={eachMatch} />
+          <MatchCard key={eachMatch.id} recentMatchDetails={eachMatch} />
         ))}
       </ul>
     )
