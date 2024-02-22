@@ -1,1 +1,32 @@
-/* Write your CSS here */
+.team-match-card {
+  border: solid 1px #ffffff;
+  border-radius: 11px;
+  background-color: #ffffff33;
+  width: 145px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  margin: 9px 5px;
+}
+
+.team-match-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+
+.team-card-logo {
+  width: 45px;
+}
+
+.team-name-card {
+  text-align: center;
+  width: 53%;
+}
+
+.team-card-name {
+  font-size: 11px;
+  color: #ffffff;
+  text-align: center;
+}

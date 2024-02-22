@@ -56,8 +56,8 @@ class Home extends Component {
             />
             <h1 className="app-title">IPL Dashboard</h1>
           </div>
+          {isLoading ? this.renderLoader() : this.renderTeamCardSection()}
         </div>
-        {isLoading ? this.renderLoader() : this.renderTeamCardSection()}
       </div>
     )
   }

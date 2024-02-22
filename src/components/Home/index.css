@@ -10,23 +10,25 @@
 }
 
 .dashboard-container {
-  width: 90%;
+  /* width: 90%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px #ffffff;
 }
 
 .dashboard-title-section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
+  width: 80%;
 }
 
+.app-title {
+  font-size: 25px;
+}
 .app-logo {
-  width: 37px;
+  width: 27px;
   /* margin-right: 11px; */
 }
 
