@@ -8,7 +8,7 @@
   align-items: center;
   margin: 9px 5px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .team-match-card {
     width: 40%;
     height: 125px;
@@ -24,7 +24,7 @@
   align-items: center;
   text-decoration: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .team-match-link {
     width: 75%;
     justify-content: space-between;
@@ -34,7 +34,7 @@
 .team-card-logo {
   width: 45px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .team-logo {
     width: 148px;
   }
@@ -50,7 +50,7 @@
   color: #ffffff;
   text-align: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .team-card-name {
     font-size: 15px;
   }
