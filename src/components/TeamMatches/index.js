@@ -60,9 +60,10 @@ class TeamMatches extends Component {
     const {latestMatchDetails, teamBannerUrl} = teamMatchDetails
 
     return (
-      <div className="team-matches-header">
+      <div className="upper-section">
         <img src={teamBannerUrl} alt="team banner" className="team-banner" />
         <div className="latest-match-section">
+          <p className="latest-match-title">Latest Matches</p>
           <LatestMatch matchDetails={latestMatchDetails} />
         </div>
       </div>
@@ -79,10 +80,6 @@ class TeamMatches extends Component {
     const {teamMatchDetails} = this.state
     const {recentMatches} = teamMatchDetails
 
-    // const {match} = this.props
-    // const {params} = match
-    // const {id} = params
-
     return (
       <ul className="team-recent-matches-list">
         {recentMatches.map(eachMatch => (
@@ -94,12 +91,14 @@ class TeamMatches extends Component {
 
   render() {
     const {isLoading} = this.state
+    const {match} = this.props
+    const {params} = match
+    const {id} = params
+    const team = `${id}`.toLowerCase()
 
     return (
-      <div className="team-matches-container">
-        <div className="upper-section">
-          {isLoading ? this.renderLoader() : this.renderLatestMatch()}
-        </div>
+      <div className={`team-matches-container ${team}`}>
+        {isLoading ? this.renderLoader() : this.renderLatestMatch()}
         {isLoading ? this.renderLoader() : this.renderMatchCard()}
       </div>
     )

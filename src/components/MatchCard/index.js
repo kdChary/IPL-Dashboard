@@ -9,7 +9,7 @@ const MatchCard = props => {
     result,
     matchStatus,
   } = recentMatchDetails
-  const resultClass = matchStatus === 'Won' ? 'won' : 'lost'
+  const resultClass = matchStatus === 'Won' ? null : 'lost'
 
   return (
     <li className="match-card-item">
@@ -20,7 +20,7 @@ const MatchCard = props => {
       />
       <h4 className="competing-team-name">{competingTeam}</h4>
       <p className="match-result">{result}</p>
-      <p className={`match-result ${resultClass}`}>{matchStatus}</p>
+      <p className={`match-status ${resultClass}`}>{matchStatus}</p>
     </li>
   )
 }
