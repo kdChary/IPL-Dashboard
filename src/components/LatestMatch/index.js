@@ -19,14 +19,14 @@ const LatestMatch = props => {
     <div className="latest-match-card">
       <div className="match-venue-result-card">
         <div className="venue-details">
-          <h4 className="latest-competing-team">{competingTeam}</h4>
+          <p className="latest-competing-team">{competingTeam}</p>
           <p className="latest-match-date">{date}</p>
           <p className="latest-match-venue">{venue}</p>
           <p className="latest-match-result">{result}</p>
         </div>
         <img
           src={competingTeamLogo}
-          alt={`competing team ${competingTeam}`}
+          alt={`latest match ${competingTeam}`}
           className="latest-match-logo"
         />
       </div>
@@ -34,11 +34,11 @@ const LatestMatch = props => {
         <ul className="latest-match-innings-list">
           <li className="innings-item">
             <p className="innings-item">First Innings</p>
-            {firstInnings}
+            <p>{firstInnings}</p>
           </li>
           <li className="innings-item">
             <p className="innings-item">Second Innings</p>
-            {secondInnings}
+            <p>{secondInnings}</p>
           </li>
           <li className="innings-item">
             <p className="latest-man-of-match">Man of The Match</p>
@@ -46,7 +46,7 @@ const LatestMatch = props => {
           </li>
           <li className="innings-item">
             <p className="innings-item">Umpires</p>
-            {umpires}
+            <p>{umpires}</p>
           </li>
         </ul>
       </div>

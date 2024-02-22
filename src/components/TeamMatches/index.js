@@ -60,13 +60,16 @@ class TeamMatches extends Component {
     const {latestMatchDetails, teamBannerUrl} = teamMatchDetails
 
     return (
-      <div className="upper-section">
-        <img src={teamBannerUrl} alt="team banner" className="team-banner" />
-        <div className="latest-match-section">
-          <p className="latest-match-title">Latest Matches</p>
-          <LatestMatch matchDetails={latestMatchDetails} />
+      <>
+        <div className="upper-section">
+          <img src={teamBannerUrl} alt="team banner" className="team-banner" />
+          <div className="latest-match-section">
+            <p className="latest-match-title">Latest Matches</p>
+            <LatestMatch matchDetails={latestMatchDetails} />
+          </div>
         </div>
-      </div>
+        {this.renderMatchCard()}
+      </>
     )
   }
 
@@ -99,7 +102,6 @@ class TeamMatches extends Component {
     return (
       <div className={`team-matches-container ${team}`}>
         {isLoading ? this.renderLoader() : this.renderLatestMatch()}
-        {isLoading ? this.renderLoader() : this.renderMatchCard()}
       </div>
     )
   }

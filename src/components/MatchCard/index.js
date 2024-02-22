@@ -18,7 +18,7 @@ const MatchCard = props => {
         alt={`competing team ${competingTeam}`}
         className="competing-team-logo"
       />
-      <h4 className="competing-team-name">{competingTeam}</h4>
+      <p className="competing-team-name">{competingTeam}</p>
       <p className="match-result">{result}</p>
       <p className={`match-status ${resultClass}`}>{matchStatus}</p>
     </li>
