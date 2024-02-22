@@ -1,1 +1,61 @@
-/* Write your CSS here */
+.latest-match-card {
+  background-color: #0f172a;
+  border-radius: 13px;
+}
+
+.match-venue-result-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px;
+  border-bottom: solid 2px #475569;
+}
+
+.venue-details {
+  color: #ffffff;
+  width: 56%;
+}
+
+.latest-competing-team {
+  font-size: 19px;
+  margin-bottom: 0;
+}
+
+.latest-match-date {
+  font-size: 15px;
+}
+
+.latest-match-venue {
+  font-size: 11px;
+}
+
+.latest-match-result {
+  font-size: 11px;
+}
+
+.latest-match-logo {
+  width: 56px;
+}
+
+.latest-match-details {
+  padding: 7px;
+  color: #ffffff;
+}
+
+.latest-match-innings-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.innings-item {
+  margin-bottom: 3px;
+  font-size: 11px;
+}
+
+.latest-man-of-match {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.man-of-match {
+  margin-top: 0;
+}

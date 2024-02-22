@@ -36,8 +36,10 @@ const LatestMatch = props => {
           <li className="innings-item">{firstInnings}</li>
           <li className="innings-item">Second Innings</li>
           <li className="innings-item">{secondInnings}</li>
-          <p className="latest-man-of-match">Man of The Match</p>
-          <li className="innings-item">{manOfTheMatch}</li>
+          <li className="innings-item">
+            <p className="latest-man-of-match">Man of The Match</p>
+            <p className="man-of-match">{manOfTheMatch}</p>
+          </li>
           <li className="innings-item">Umpires</li>
           <li className="innings-item">{umpires}</li>
         </ul>
